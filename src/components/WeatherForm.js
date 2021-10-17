@@ -38,10 +38,8 @@ const WeatherForm = ({addCity, showResults, cleanCities}) => {
 
   useEffect(() => {
     if (city.length) {
-      console.log(city);
       getWeather(city);
-    } 
-    return () => {}
+    }
   }, [city]);  
 
   const getCityData = city => {
